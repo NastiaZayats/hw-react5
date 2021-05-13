@@ -4,6 +4,7 @@ export default function Posts() {
 
     let [posts, setPosts] = useState([]);
     let [singlePost, setSinglePost] = useState([]);
+
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(value => value.json())
@@ -11,7 +12,6 @@ export default function Posts() {
                 setPosts(value);
 
             });
-
     }, []);
 
     const postDetails = (id) => {

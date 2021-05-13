@@ -6,7 +6,8 @@ export default function User({item, url}) {
         <div>
             {item.id} - {item.name} -
             <Link to={{pathname: path, state: item}}>
-            <button>details</button></Link>
+                <button>details</button>
+            </Link>
         </div>
     )
 }

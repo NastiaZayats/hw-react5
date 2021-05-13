@@ -16,8 +16,8 @@ function App() {
                     <li><Link to={'/users'}>to users</Link></li>
                     <li><Link to={'/posts'}>to posts</Link></li>
                 </ul>
-                <Switch>
 
+                <Switch>
                     <Route path={'/users/'} render={(props) => {
                         return <Users {...props}/>
                     }}/>
@@ -27,6 +27,7 @@ function App() {
                     }}/>
 
                 </Switch>
+
 
             </Router>
         </div>
